@@ -7,7 +7,7 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-color: #204051;
+  background-color: #00494d;
   color: rgba(255, 255, 255, 0.884);
   font-family: "Montserrat", sans-serif;
 }
@@ -64,7 +64,6 @@ body {
 header {
   width: 90vw;
   height: 10vh;
-  background-color: #204051;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -109,9 +108,9 @@ header {
   justify-content: flex-start;
 }
 .content {
-  width: 60vw;
+  width: 65vw;
   height: 83vh;
-  margin: 7vh 0 0 5vw;
+  margin: 7vh 0 0 8vw;
   background-color: #204051c0;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
@@ -144,20 +143,20 @@ header {
   align-items: center;
 }
 .photo-container {
-  width: 13vw;
-  height: 28vh;
+  width: 10vw;
+  height: 25vh;
   margin-left: 3vw;
-  background-color: ivory;
+  /* background-color: ivory; */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-img {
+/* img {
   width: 13vw;
   height: 25vh;
-}
+} */
 
 .nav-bar {
   width: 15vw;
@@ -191,17 +190,17 @@ li {
   color:rgba(255, 255, 255, 0.884)
 }
 .text {
-  width: 55vw;
-  height: 200vh;
+  width: 70vw;
+  height: 300vh;
   display: flex;
   flex-direction: column;
 }
 
 h1 {
-  width: 20vw;
+  width:45vw;
   height: 10vh;
   line-height: 10vh;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.815);
   /* font-family: 'Neucha', cursive; */
@@ -211,21 +210,39 @@ h1 {
 
 
 .elements{
-  width: 60vw;
-  height: 200vh;
+  width: 65vw;
+  height: 220vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-self: center;
+ align-items: center;
+ justify-content: space-evenly;
 }
 .about,
-.experience,
 .skills,
 .contact {
   width: 25vw;
   height: 20vh;
+  /* margin-top: 5vh; */
   align-self: center;
   text-align: center;
+}
+.experience{
+  width:50vw;
+  height: 50vh;
+  align-self: center;
+  text-align: center;
+
+}
+.gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card-title{
+  margin-top: 2vh;
+  font-size:1.2rem;
 }
 .special {
   font-size: 3.5rem;
