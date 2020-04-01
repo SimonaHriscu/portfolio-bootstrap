@@ -118,9 +118,18 @@ header {
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-  scroll-behavior: smooth;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ef962d;
+}
+
 .info {
   width: 60vw;
   height: 30vh;
@@ -202,7 +211,7 @@ h1 {
 
 
 .elements{
-  width: 55vw;
+  width: 60vw;
   height: 200vh;
   display: flex;
   flex-direction: column;
