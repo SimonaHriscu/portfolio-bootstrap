@@ -109,9 +109,9 @@ header {
 }
 .content {
   width: 75vw;
-  height: 83vh;
+  height: 90vh;
   /* margin: 7vh 0 0 8vw; */
-  background-color: #2040519a;
+  background-color: #2040515e;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
   display: flex;
