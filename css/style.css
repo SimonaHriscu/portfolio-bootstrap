@@ -103,32 +103,32 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-start; */
 }
 .content {
   width: 75vw;
   height: 90vh;
   /* margin: 7vh 0 0 8vw; */
-  background-color: #2040515e;
+  background-color: #2040518c;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
-  width: 0px;  /* Remove scrollbar space */
-  background: transparent;  /* Optional: just make scrollbar invisible */
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
 }
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
   background: #ef962d;
 }
-
+/* Photo and Menu */
 .info {
   width: 70vw;
   height: 30vh;
@@ -146,7 +146,6 @@ header {
   width: 10vw;
   height: 25vh;
   margin-left: 3vw;
-  /* background-color: ivory; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -154,12 +153,9 @@ header {
 }
 
 [alt^="profile"] {
-  /* width: 13vw;
-  height: 25vh; */
-
   border-radius: 45%;
-} 
-
+}
+/* Menu */
 .nav-bar {
   width: 20vw;
   height: 30vh;
@@ -174,7 +170,7 @@ ul {
   height: 25vh;
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   justify-content: center;
 }
 
@@ -188,21 +184,24 @@ li {
   color: rgba(255, 255, 255, 0.479);
 }
 
-.nav-bar ul a{
+.nav-bar ul a {
   text-decoration: none;
   line-height: 3.5vh;
-  color:rgba(255, 255, 255, 0.884)
+  color: rgba(255, 255, 255, 0.884);
 }
 .text {
   width: 70vw;
   height: 300vh;
-  display: flex;
-  flex-direction: column;
+  
+}
+.name-title {
+  width: 45vw;
+  height: 15vh;
 }
 
 h1 {
-  width:45vw;
-  height: 10vh;
+  width: 45vw;
+  height: 7vh;
   font-size: 3.5rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.815);
@@ -210,53 +209,153 @@ h1 {
   font-family: "Source Code Pro", monospace;
   text-align: center;
 }
-h2{
-  width:45vw;
+h2 {
+  width: 45vw;
+  height: 7vh;
   font-family: "Source Code Pro", monospace;
   text-align: center;
-  
 }
 
-.elements{
+.name-title h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/* Content Elements  */
+.elements {
   width: 75vw;
-  height: 220vh;
+  height: 260vh;
   display: flex;
   flex-direction: column;
- align-items: center;
- justify-content: space-evenly;
+  align-items: center;
+  justify-items: center;
 }
-.about,
-.skills,
-.contact {
+
+.about-container,
+.skills-container,
+.experience-container,
+.contact-container{
+  width: 75vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.about{
+  width: 35vw;
+  height: 25vh;
+  
+}
+.contact{
   width: 35vw;
   height: 25vh;
   /* margin-top: 5vh; */
-  align-self: center;
+  /* align-self: center; */
   text-align: center;
 }
-.experience{
-  width:50vw;
-  height: auto;
-  align-self: center;
-  text-align: center;
+.content0 {
+  width: 35vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: row;
+}
+.content1 {
+  width: 25vw;
+  height: 25vh;
+  /* padding-top: 1.2vh; */
+}
 
+.content2 ul {
+  width: 7vw;
+  height: 15vh;
+  font-size: 1rem;
+  font-weight: 600;
 }
-.gallery{
+
+.experience {
+  width: 50vw;
+  height: auto;
+  text-align: center;
+}
+.gallery {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.card .img-fluid{
+.card-img1 {
+  width: 15vw;
+  height: 15vh;
+  background-image: url(../img/udemy.png);
+  background-position: center;
+  background-size: cover;
+}
+.card-img2 {
+  width: 15vw;
+  height: 15vh;
+  background-image: url(../img/periodicTable.png);
+  background-position: center;
+  background-size: cover;
+}
+.card-img3 {
+  width: 15vw;
+  height: 15vh;
+  background-image: url(../img/youtube.png);
+  background-position: center;
+  background-size: cover;
+}
+.card-img4 {
+  width: 15vw;
+  height: 15vh;
+  background-image: url(../img/responsive.png);
+  background-position: center;
+  background-size: cover;
+}
+.card-img5 {
+  width: 15vw;
+  height: 15vh;
+  background-image: url(../img/chess.png);
+  background-position: center;
+  background-size: cover;
+}
+.card {
   filter: opacity(0.5);
 }
-.card .img-fluid:hover{
+.card:hover {
   filter: none;
   transition: 0.3s ease-in;
 }
-.card-title{
-  margin-top: 2vh;
-  font-size:1.2rem;
+.card-title {
+  margin-top: 1vh;
+  font-size: 1.2rem;
 }
 .special {
   font-size: 3.5rem;
@@ -274,9 +373,36 @@ h2{
   border-color: #ef962d;
 }
 
-.btn-primary:focus, .btn-primary.focus {
+.btn-primary:focus,
+.btn-primary.focus {
   color: #fff;
   background-color: #ef962d;
   border-color: #ef962d;
   box-shadow: 0 0 0 0.2rem #ef962d;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ff9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+}
+.button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #333;
 }
