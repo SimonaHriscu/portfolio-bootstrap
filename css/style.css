@@ -99,7 +99,7 @@ header {
   width: 85vw;
   height: 90vh;
   background-image: url(../img/7b228d94120889.5e76b49ead998.png);
-  border-top-left-radius: 55px;
+  border-top-left-radius: 35px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,10 +108,10 @@ header {
   justify-content: flex-start;
 }
 .content {
-  width: 65vw;
+  width: 75vw;
   height: 83vh;
-  margin: 7vh 0 0 8vw;
-  background-color: #204051c0;
+  /* margin: 7vh 0 0 8vw; */
+  background-color: #2040519a;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
   display: flex;
@@ -130,7 +130,7 @@ header {
 }
 
 .info {
-  width: 60vw;
+  width: 70vw;
   height: 30vh;
   display: flex;
   flex-direction: row;
@@ -153,16 +153,20 @@ header {
   justify-content: center;
 }
 
-/* img {
-  width: 13vw;
-  height: 25vh;
-} */
+[alt^="profile"] {
+  /* width: 13vw;
+  height: 25vh; */
+
+  border-radius: 45%;
+} 
 
 .nav-bar {
-  width: 15vw;
+  width: 20vw;
   height: 30vh;
   display: flex;
-  justify-content: start;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 ul {
@@ -170,7 +174,7 @@ ul {
   height: 25vh;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items:center;
   justify-content: center;
 }
 
@@ -199,7 +203,6 @@ li {
 h1 {
   width:45vw;
   height: 10vh;
-  line-height: 10vh;
   font-size: 3.5rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.815);
@@ -207,10 +210,15 @@ h1 {
   font-family: "Source Code Pro", monospace;
   text-align: center;
 }
-
+h2{
+  width:45vw;
+  font-family: "Source Code Pro", monospace;
+  text-align: center;
+  
+}
 
 .elements{
-  width: 65vw;
+  width: 75vw;
   height: 220vh;
   display: flex;
   flex-direction: column;
@@ -220,15 +228,15 @@ h1 {
 .about,
 .skills,
 .contact {
-  width: 25vw;
-  height: 20vh;
+  width: 35vw;
+  height: 25vh;
   /* margin-top: 5vh; */
   align-self: center;
   text-align: center;
 }
 .experience{
   width:50vw;
-  height: 50vh;
+  height: auto;
   align-self: center;
   text-align: center;
 
