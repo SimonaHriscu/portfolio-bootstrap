@@ -46,15 +46,15 @@
               <div class="info">
                 <div class="photo">
                   <div class="photo-container">
-                    <img src="./img/SImona.png" alt="profile-pic" />
+                    <!-- <img src="./img/SImona.png" alt="profile-pic" /> -->
                   </div>
                 </div>
                 <div class="nav-bar">
                   <ul>
-                    <li>00About</li>
-                    <li>01 Skills</li>
-                    <li>02 Experince</li>
-                    <li>03 Contact</li>
+                    <a href="#"><li>00About</li></a>
+                    <a href="#skills"><li>01 Skills</li></a>
+                    <a href="#experience"><li>02 Experince</li></a>
+                    <a href="#contact"><li>03 Contact</li></a>
                   </ul>
                 </div>
               </div>
@@ -80,7 +80,7 @@
                     </p>
                   </div>
                   <!-- 01.SKILLS -->
-                  <div class="skills">
+                  <div class="skills" id="skills">
                     <h4><span class="special">01.</span> Skills</h4>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -92,7 +92,7 @@
                     </p>
                   </div>
                   <!-- 02.Experience -->
-                  <div class="experience">
+                  <div class="experience" id="experience">
                     <h4><span class="special">02.</span> Experience</h4>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -104,16 +104,32 @@
                     </p>
                   </div>
                   <!-- 03.Contact -->
-                  <div class="contact">
+                  <div class="contact" id="contact">
                     <h4><span class="special">03.</span> Contact</h4>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Veritatis, molestiae exercitationem molestias accusantium
-                      iste quam officia. Saepe consequuntur nihil in neque
-                      recusandae iusto ipsum, et tempora ducimus obcaecati
-                      ratione, quisquam placeat. Nulla, cupiditate magnam veniam
-                      sint doloribus voluptatibus exercitationem libero.
+                      Get in touch!
                     </p>
+                    <form>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputEmail4">First name</label>
+                          <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputPassword4">Last name</label>
+                          <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputAddress">E-mail</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="example@email.com">
+                      </div>
+                                      
+                      <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                    <br>
+                    <p> © 2020 by Simona Hriscu</p>
+                    
                   </div>
                 </div>
               </div>
