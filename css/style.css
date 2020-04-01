@@ -247,7 +247,13 @@ h2{
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
+.card .img-fluid{
+  filter: opacity(0.5);
+}
+.card .img-fluid:hover{
+  filter: none;
+  transition: 0.3s ease-in;
+}
 .card-title{
   margin-top: 2vh;
   font-size:1.2rem;
