@@ -256,11 +256,19 @@ h2 {
   justify-items: center;
 }
 
-.about-container,
+.about-container{
+  width: 80vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
 .skills-container,
 .experience-container,
 .contact-container{
-  width: 75vw;
+  width: 80vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
