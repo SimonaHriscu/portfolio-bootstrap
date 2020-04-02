@@ -57,7 +57,7 @@ body {
 }
 .media-container a:hover {
   font-size: 3.3vh;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
   color: rgba(255, 255, 255, 0.884);
 }
 
@@ -387,19 +387,20 @@ h2 {
 
 /* Go up */
 
-.button {
+#button {
   display: inline-block;
   background-color: #ff9800;
   width: 50px;
   height: 50px;
   text-align: center;
+  border: none;
   border-radius: 4px;
   position: fixed;
   bottom: 30px;
   right: 30px;
   z-index: 1000;
 }
-.button::after {
+#button::after {
   content: "\f077";
   font-family: FontAwesome;
   font-weight: normal;
@@ -408,7 +409,7 @@ h2 {
   line-height: 50px;
   color: #fff;
 }
-.button:hover {
+#button:hover {
   cursor: pointer;
   background-color: #333;
 }
