@@ -13,33 +13,884 @@ body {
   color: rgba(255, 255, 255, 0.884);
   font-family: "Montserrat", sans-serif;
 }
-.container-fluid {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
+
+/*###############Mobile < 600px#####################*/
+@media only screen and (max-width: 600px) {
+  .container-fluid {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+  }
+/* Media part top hidden */
+  .media {
+    width: 34vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    display: none;
+  }
+
+  .media-container {
+    width: 3vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 3vh;
+    display: none;
+  }
+
+.media-container a {
+  color: rgba(255, 255, 255, 0.884);
+  font-size: 2vh;
+  display: none;
+}
+/* HEADER */
+header {
   width: 100vw;
-  display: flex;
-  flex-direction: row;
-}
-.media {
-  width: 10vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-.media-container {
-  width: 3vw;
   height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 35vw;
+  height: 8vh;
+  font-family: "Amatic SC", cursive;
+  font-size: 7.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.container2 {
+  width: 100vw;
+  height: 430vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-left: 1px solid white;
+  /* border-right: 1px solid white; */
+}
+.background-border {
+  width: 95vw;
+  height: 35vh;
+  background-image: url(../img/7b228d94120889.5e76b49ead998.png);
+  border-top-left-radius: 35px;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: flex-start; */
+}
+.content {
+  width: 90vw;
+  height: 430vh;
+
+  background-color: #2040518c;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+
+  /* overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth; */
+}
+/* Photo and Menu */
+.info {
+  width:100vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo {
+  width: 45vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.photo-container {
+  width: 40vw;
+  height: 35vh;
+  margin-left: 3vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+[alt^="profile"] {
+  border-radius: 45%;
+}
+/* Menu */
+.nav-bar {
+  width: 50vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  width: 40vw;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  margin-bottom: 3vh;
+  justify-content: center;
 }
 
-/* .fa-linkedin,
+li {
+  list-style: none;
+  width: auto;
+  line-height: 3.5vh;
+}
+
+.nav-bar ul a:first-child {
+  color: rgba(255, 255, 255, 0.479);
+}
+
+.nav-bar ul a {
+  text-decoration: none;
+  line-height: 3.5vh;
+  color: rgba(255, 255, 255, 0.884);
+}
+
+
+.text {
+  width: 85vw;
+  height: 300vh;
+  
+  
+}
+.name-title {
+  width: 85vw;
+  height: 20vh;
+}
+
+h1 {
+  width: 55vw;
+  height: 9vh;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.815);
+  /* font-family: 'Neucha', cursive; */
+  font-family: "Source Code Pro", monospace;
+  text-align: center;
+}
+h2 {
+  width: 85vw;
+  height: 7vh;
+  font-size: 1.2rem;
+  font-family: "Source Code Pro", monospace;
+  text-align: center;
+}
+
+.name-title h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.05em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/* Content Elements  */
+.elements {
+  width: 85vw;
+  height: 350vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.about-container{
+  width: 80vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.skills-container{
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 20vh;
+}
+
+.experience-container,
+.contact-container{
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.special {
+  font-size: 3.5rem;
+  color: rgba(255, 255, 255, 0.479);
+}
+.about,
+.skills,
+.experience,
+.contact{
+  width: 85vw;
+  height: 35vh;
+  /* margin-top: 5vh; */
+  /* align-self: center; */
+  text-align: center;
+}
+/* SKills */
+.content0 {
+  width: 85vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: row;
+}
+.content1 {
+  width: 55vw;
+  height: 25vh;
+  /* padding-top: 1.2vh; */
+}
+
+.content2 ul {
+  width: 25vw;
+  height: 15vh;
+  font-size: 1rem;
+  font-weight: 600;
+}
+/* Experience */
+.experience {
+  width: 85vw;
+  height: 25vh;
+  height: auto;
+  text-align: center;
+}
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card-img1 {
+  width: 45vw;
+  height: 15vh;
+  background-image: url(../img/udemy.png);
+  background-position: center;
+  background-size: cover;
+}
+.card-img2 {
+  width: 45vw;
+  height: 15vh;
+  background-image: url(../img/periodicTable.png);
+  background-position: center;
+  background-size: cover;
+}
+.card-img3 {
+  width: 45vw;
+  height: 15vh;
+  background-image: url(../img/youtube.png);
+  background-position: center;
+  background-size: cover;
+}
+.card-img4 {
+  width: 45vw;
+  height: 15vh;
+  background-image: url(../img/responsive.png);
+  background-position: center;
+  background-size: cover;
+}
+.card-img5 {
+  width: 45vw;
+  height: 15vh;
+  background-image: url(../img/chess.png);
+  background-position: center;
+  background-size: cover;
+}
+.card {
+  filter: opacity(0.5);
+}
+.card:hover {
+  filter: none;
+  transition: 0.3s ease-in;
+}
+.card-title {
+  margin-top: 1vh;
+  font-size: 1.2rem;
+}
+
+
+
+/* SUBMIT */
+.btn-primary:hover {
+  color: #fff;
+  background-color: #ef962d;
+  border-color: #ef962d;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #fff;
+  background-color: #ef962d;
+  border-color: #ef962d;
+  box-shadow: 0 0 0 0.2rem #ef962d;
+}
+/* MEDIA */
+.media-mobile{
+  width: 85vw;
+  height: 12vh;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  justify-self: center;
+ 
+}
+.media-container-mobile{
+  width: 85vw;
+  height: 12vh;
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 3vh;
+    
+  }
+
+.media-container-mobile a {
+  color: rgba(255, 255, 255, 0.884);
+  font-size: 4vh;
+}
+
+
+/* Go up */
+
+#button {
+  display: inline-block;
+  background-color: #ff9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+
+}
+
+
+/*###############Mobile min 600px and max 900#####################*/
+@media screen and (min-width:600px) and (max-width:900px)  {
+  .container-fluid {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+  }
+/* Media part top hidden */
+  .media {
+    width: 34vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    display: none;
+  }
+
+  .media-container {
+    width: 3vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 3vh;
+    display: none;
+  }
+
+.media-container a {
+  color: rgba(255, 255, 255, 0.884);
+  font-size: 2vh;
+  display: none;
+}
+/* HEADER */
+header {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 35vw;
+  height: 8vh;
+  font-family: "Amatic SC", cursive;
+  font-size: 9.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.container2 {
+  width: 100vw;
+  height: 430vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-left: 1px solid white;
+  /* border-right: 1px solid white; */
+}
+.background-border {
+  width: 95vw;
+  height: 35vh;
+  background-image: url(../img/7b228d94120889.5e76b49ead998.png);
+  border-top-left-radius: 35px;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: flex-start; */
+}
+.content {
+  width: 90vw;
+  height: 430vh;
+
+  background-color: #2040518c;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+
+  /* overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth; */
+}
+/* Photo and Menu */
+.info {
+  width:100vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo {
+  width: 35vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.photo-container {
+  width: 40vw;
+  height: 35vh;
+  margin-left: 3vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+[alt^="profile"] {
+  border-radius: 45%;
+}
+/* Menu */
+.nav-bar {
+  width: 50vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  width: 40vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+  width: auto;
+  line-height: 3.5vh;
+}
+
+.nav-bar ul a:first-child {
+  color: rgba(255, 255, 255, 0.479);
+}
+
+.nav-bar ul a {
+  text-decoration: none;
+  line-height: 3.5vh;
+  color: rgba(255, 255, 255, 0.884);
+}
+
+
+.text {
+  width: 85vw;
+  height: 300vh;
+  
+  
+}
+.name-title {
+  width: 85vw;
+  height: 20vh;
+}
+
+h1 {
+  width: 55vw;
+  height: 9vh;
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.815);
+  /* font-family: 'Neucha', cursive; */
+  font-family: "Source Code Pro", monospace;
+  text-align: center;
+}
+h2 {
+  width: 85vw;
+  height: 7vh;
+  font-size: 1.2rem;
+  font-family: "Source Code Pro", monospace;
+  text-align: center;
+}
+
+.name-title h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.05em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/* Content Elements  */
+.elements {
+  width: 85vw;
+  height: 350vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.about-container{
+  width: 80vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.skills-container{
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 20vh;
+}
+
+.experience-container,
+.contact-container{
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.special {
+  font-size: 3.5rem;
+  color: rgba(255, 255, 255, 0.479);
+}
+.about,
+.skills,
+.experience,
+.contact{
+  width: 85vw;
+  height: 35vh;
+  /* margin-top: 5vh; */
+  /* align-self: center; */
+  text-align: center;
+}
+/* SKills */
+.content0 {
+  width: 85vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: row;
+}
+.content1 {
+  width: 55vw;
+  height: 25vh;
+  /* padding-top: 1.2vh; */
+}
+
+.content2 ul {
+  width: 25vw;
+  height: 15vh;
+  font-size: 1rem;
+  font-weight: 600;
+}
+/* Experience */
+.experience {
+  width: 85vw;
+  height: 25vh;
+  height: auto;
+  text-align: center;
+}
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card-img1 {
+  width: 45vw;
+  height: 15vh;
+  background-image: url(../img/udemy.png);
+  background-position: center;
+  background-size: cover;
+}
+.card-img2 {
+  width: 45vw;
+  height: 15vh;
+  background-image: url(../img/periodicTable.png);
+  background-position: center;
+  background-size: cover;
+}
+.card-img3 {
+  width: 45vw;
+  height: 15vh;
+  background-image: url(../img/youtube.png);
+  background-position: center;
+  background-size: cover;
+}
+.card-img4 {
+  width: 45vw;
+  height: 15vh;
+  background-image: url(../img/responsive.png);
+  background-position: center;
+  background-size: cover;
+}
+.card-img5 {
+  width: 45vw;
+  height: 15vh;
+  background-image: url(../img/chess.png);
+  background-position: center;
+  background-size: cover;
+}
+.card {
+  filter: opacity(0.5);
+}
+.card:hover {
+  filter: none;
+  transition: 0.3s ease-in;
+}
+.card-title {
+  margin-top: 1vh;
+  font-size: 1.2rem;
+}
+
+
+
+/* SUBMIT */
+.btn-primary:hover {
+  color: #fff;
+  background-color: #ef962d;
+  border-color: #ef962d;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #fff;
+  background-color: #ef962d;
+  border-color: #ef962d;
+  box-shadow: 0 0 0 0.2rem #ef962d;
+}
+/* MEDIA */
+.media-mobile{
+  width: 85vw;
+  height: 12vh;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  justify-self: center;
+ 
+}
+.media-container-mobile{
+  width: 85vw;
+  height: 12vh;
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 3vh;
+    
+  }
+
+.media-container-mobile a {
+  color: rgba(255, 255, 255, 0.884);
+  font-size: 4vh;
+}
+
+
+/* Go up */
+
+#button {
+  display: inline-block;
+  background-color: #ff9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+
+}
+
+
+/*############### min 900px ###################*/
+@media screen and (min-width:900px) {
+
+  .container-fluid {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+  }
+  .media {
+    width: 10vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .media-container {
+    width: 3vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 3vh;
+  }
+  /* .fa-linkedin,
 .fa-github-square,
 .fa-envelope,
 .fa-folder-open {
@@ -191,6 +1042,7 @@ li {
   line-height: 3.5vh;
   color: rgba(255, 255, 255, 0.884);
 }
+
 .text {
   width: 70vw;
   height: 300vh;
@@ -216,6 +1068,10 @@ h2 {
   height: 7vh;
   font-family: "Source Code Pro", monospace;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .name-title h1 {
@@ -414,4 +1270,9 @@ h2 {
 #button:hover {
   cursor: pointer;
   background-color: #333;
+}
+
+.media-mobile{
+  display: none;
+}
 }
