@@ -9893,453 +9893,24 @@ h3 {
     border-color: #dee2e6;
   }
 }
-/*###############Mobile min 600px and max 900#####################*/
-@media screen and (min-width: 600px) and (max-width: 900px) {
-  .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-  }
-
-  /* Media part top hidden */
-  .media {
-    width: 34vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-start;
-    display: none;
-  }
-  .media .media-container {
-    width: 3vw;
-    height: 20vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 3vh;
-    display: none;
-  }
-  .media .media-container a {
-    color: rgba(255, 255, 255, 0.884);
-    font-size: 2vh;
-    display: none;
-  }
-
-  /* HEADER */
-  header {
-    width: 100vw;
-    height: 20vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  header .logo {
-    width: 35vw;
-    height: 8vh;
-    font-family: "Amatic SC", cursive;
-    font-size: 9.5vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .background-border {
-    width: 95vw;
-    height: 35vh;
-    background-image: url(../img/7b228d94120889.5e76b49ead998.png);
-    border-top-left-radius: 35px;
-    background-position: center;
-    background-repeat: repeat-y;
-    background-size: cover;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: flex-start; */
-  }
-
-  .content {
-    width: 90vw;
-    height: 430vh;
-    background-color: #2040518c;
-    border-top-left-radius: 35px;
-    border-top-right-radius: 35px;
-    /* overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-behavior: smooth; */
-  }
-
-  /* Photo and Menu */
-  .info {
-    width: 100vw;
-    height: 40vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .photo {
-    width: 35vw;
-    height: 40vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-  .photo-container {
-    width: 40vw;
-    height: 35vh;
-    margin-left: 3vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-
-  [alt^=profile] {
-    border-radius: 45%;
-  }
-
-  /* Menu */
-  .nav-bar {
-    width: 50vw;
-    height: 40vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  ul {
-    width: 40vw;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  li {
-    list-style: none;
-    width: auto;
-    line-height: 3.5vh;
-  }
-
-  .nav-bar ul a:first-child {
-    color: rgba(255, 255, 255, 0.479);
-  }
-
-  .nav-bar ul a {
-    text-decoration: none;
-    line-height: 3.5vh;
-    color: rgba(255, 255, 255, 0.884);
-  }
-
-  .text {
-    width: 85vw;
-    height: 300vh;
-  }
-
-  .name-title {
-    width: 85vw;
-    height: 20vh;
-  }
-
-  h1 {
-    width: 55vw;
-    height: 9vh;
-    font-size: 2.6rem;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.815);
-    /* font-family: 'Neucha', cursive; */
-    font-family: "Source Code Pro", monospace;
-    text-align: center;
-  }
-
-  h2 {
-    width: 85vw;
-    height: 7vh;
-    font-size: 1.2rem;
-    font-family: "Source Code Pro", monospace;
-    text-align: center;
-  }
-
-  .name-title h1 {
-    overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
-    border-right: 0.15em solid orange;
-    /* The typwriter cursor */
-    white-space: nowrap;
-    /* Keeps the content on a single line */
-    margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0.05em;
-    /* Adjust as needed */
-    animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
-  }
-
-  /* The typing effect */
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: orange;
-    }
-  }
-  /* Content Elements  */
-  .elements {
-    width: 85vw;
-    height: 350vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-  }
-
-  .about-container {
-    width: 80vw;
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-
-  .skills-container {
-    width: 80vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin-bottom: 20vh;
-  }
-
-  .experience-container,
-.contact-container {
-    width: 80vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-
-  .special {
-    font-size: 3.5rem;
-    color: rgba(255, 255, 255, 0.479);
-  }
-
-  .about,
-.skills,
-.experience,
-.contact {
-    width: 85vw;
-    height: 35vh;
-    /* margin-top: 5vh; */
-    /* align-self: center; */
-    text-align: center;
-  }
-
-  /* SKills */
-  .content0 {
-    width: 85vw;
-    height: 25vh;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .content1 {
-    width: 55vw;
-    height: 25vh;
-    /* padding-top: 1.2vh; */
-  }
-
-  .content2 ul {
-    width: 25vw;
-    height: 15vh;
-    font-size: 1rem;
-    font-weight: 600;
-  }
-
-  /* Experience */
-  .experience {
-    width: 85vw;
-    height: 25vh;
-    height: auto;
-    text-align: center;
-  }
-
-  .gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-
-  .card-img1 {
-    width: 45vw;
-    height: 15vh;
-    background-image: url(../img/udemy.png);
-    background-position: center;
-    background-size: cover;
-  }
-
-  .card-img2 {
-    width: 45vw;
-    height: 15vh;
-    background-image: url(../img/periodicTable.png);
-    background-position: center;
-    background-size: cover;
-  }
-
-  .card-img3 {
-    width: 45vw;
-    height: 15vh;
-    background-image: url(../img/youtube.png);
-    background-position: center;
-    background-size: cover;
-  }
-
-  .card-img4 {
-    width: 45vw;
-    height: 15vh;
-    background-image: url(../img/responsive.png);
-    background-position: center;
-    background-size: cover;
-  }
-
-  .card-img5 {
-    width: 45vw;
-    height: 15vh;
-    background-image: url(../img/chess.png);
-    background-position: center;
-    background-size: cover;
-  }
-
-  .card {
-    filter: opacity(0.5);
-  }
-
-  .card:hover {
-    filter: none;
-    transition: 0.3s ease-in;
-  }
-
-  .card-title {
-    margin-top: 1vh;
-    font-size: 1.2rem;
-  }
-
-  /* SUBMIT */
-  .btn-primary:hover {
-    color: #fff;
-    background-color: #ef962d;
-    border-color: #ef962d;
-  }
-
-  .btn-primary:focus,
-.btn-primary.focus {
-    color: #fff;
-    background-color: #ef962d;
-    border-color: #ef962d;
-    box-shadow: 0 0 0 0.2rem #ef962d;
-  }
-
-  /* MEDIA */
-  .media-mobile {
-    width: 85vw;
-    height: 12vh;
-    display: flex;
-    flex-direction: row;
-    align-content: flex-end;
-    justify-self: center;
-  }
-
-  .media-container-mobile {
-    width: 85vw;
-    height: 12vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 3vh;
-  }
-
-  .media-container-mobile a {
-    color: rgba(255, 255, 255, 0.884);
-    font-size: 4vh;
-  }
-
-  /* Go up */
-  #button {
-    display: inline-block;
-    background-color: #ff9800;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    border: none;
-    border-radius: 4px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 1000;
-  }
-
-  #button::after {
-    content: "";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 2em;
-    line-height: 50px;
-    color: #fff;
-  }
-
-  #button:hover {
-    cursor: pointer;
-    background-color: #333;
-  }
-}
 /*############### min 900px ###################*/
 @media screen and (min-width: 900px) {
   .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
-    margin: 0;
-    padding: 0;
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: row;
+    margin: 0;
+    padding: 0;
   }
-
-  .media {
+  .container-fluid .media, .container-sm .media, .container-md .media, .container-lg .media, .container-xl .media {
     width: 10vw;
     height: 100vh;
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
   }
-
-  .media-container {
+  .container-fluid .media .media-container, .container-sm .media .media-container, .container-md .media .media-container, .container-lg .media .media-container, .container-xl .media .media-container {
     width: 3vw;
     height: 20vh;
     display: flex;
@@ -10348,46 +9919,38 @@ h3 {
     justify-content: space-evenly;
     margin-bottom: 3vh;
   }
-
-  .media-container a {
+  .container-fluid .media .media-container a, .container-sm .media .media-container a, .container-md .media .media-container a, .container-lg .media .media-container a, .container-xl .media .media-container a {
     color: rgba(255, 255, 255, 0.884);
     font-size: 2vh;
   }
-
-  .media-container a:hover {
+  .container-fluid .media .media-container a:hover, .container-sm .media .media-container a:hover, .container-md .media .media-container a:hover, .container-lg .media .media-container a:hover, .container-xl .media .media-container a:hover {
     font-size: 3.3vh;
     transition: 0.3s ease-in-out;
     color: rgba(255, 255, 255, 0.884);
   }
-
-  header {
-    width: 90vw;
+  .container-fluid .main, .container-sm .main, .container-md .main, .container-lg .main, .container-xl .main {
+    width: fit-content;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-fluid .main header, .container-sm .main header, .container-md .main header, .container-lg .main header, .container-xl .main header {
+    width: fit-content;
     height: 10vh;
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
   }
-
-  .logo {
+  .container-fluid .main header .logo, .container-sm .main header .logo, .container-md .main header .logo, .container-lg .main header .logo, .container-xl .main header .logo {
     width: 12vw;
     height: 6vh;
     font-family: "Amatic SC", cursive;
     font-size: 2.5vw;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-
-  .main {
-    width: 90vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .container2 {
+  .container-fluid .main .container2, .container-sm .main .container2, .container-md .main .container2, .container-lg .main .container2, .container-xl .main .container2 {
     width: 90vw;
     height: 90vh;
     display: flex;
@@ -10396,8 +9959,7 @@ h3 {
     border-left: 1px solid white;
     /* border-right: 1px solid white; */
   }
-
-  .background-border {
+  .container-fluid .main .container2 .background-border, .container-sm .main .container2 .background-border, .container-md .main .container2 .background-border, .container-lg .main .container2 .background-border, .container-xl .main .container2 .background-border {
     width: 85vw;
     height: 90vh;
     background-image: url(../img/7b228d94120889.5e76b49ead998.png);
@@ -10405,53 +9967,43 @@ h3 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: flex-start; */
   }
-
-  .content {
+  .container-fluid .main .container2 .content, .container-sm .main .container2 .content, .container-md .main .container2 .content, .container-lg .main .container2 .content, .container-xl .main .container2 .content {
     width: 75vw;
     height: 90vh;
     /* margin: 7vh 0 0 8vw; */
     background-color: #2040518c;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
-    /* display: flex;
-    flex-direction: column; */
     overflow-y: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    /* Optional: show position indicator in red */
+    /* Photo and Menu */
   }
-
-  ::-webkit-scrollbar {
+  .container-fluid .main .container2 .content::-webkit-scrollbar, .container-sm .main .container2 .content::-webkit-scrollbar, .container-md .main .container2 .content::-webkit-scrollbar, .container-lg .main .container2 .content::-webkit-scrollbar, .container-xl .main .container2 .content::-webkit-scrollbar {
     width: 0px;
     /* Remove scrollbar space */
     background: transparent;
     /* Optional: just make scrollbar invisible */
   }
-
-  /* Optional: show position indicator in red */
-  ::-webkit-scrollbar-thumb {
+  .container-fluid .main .container2 .content::-webkit-scrollbar-thumb, .container-sm .main .container2 .content::-webkit-scrollbar-thumb, .container-md .main .container2 .content::-webkit-scrollbar-thumb, .container-lg .main .container2 .content::-webkit-scrollbar-thumb, .container-xl .main .container2 .content::-webkit-scrollbar-thumb {
     background: #ef962d;
   }
-
-  /* Photo and Menu */
-  .info {
-    width: 70vw;
+  .container-fluid .main .container2 .content .info, .container-sm .main .container2 .content .info, .container-md .main .container2 .content .info, .container-lg .main .container2 .content .info, .container-xl .main .container2 .content .info {
+    width: 77vw;
     height: 30vh;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    /* Menu */
   }
-
-  .photo {
+  .container-fluid .main .container2 .content .info .photo, .container-sm .main .container2 .content .info .photo, .container-md .main .container2 .content .info .photo, .container-lg .main .container2 .content .info .photo, .container-xl .main .container2 .content .info .photo {
     width: 45vw;
     height: 30vh;
     display: flex;
     align-items: center;
   }
-
-  .photo-container {
+  .container-fluid .main .container2 .content .info .photo .photo-container, .container-sm .main .container2 .content .info .photo .photo-container, .container-md .main .container2 .content .info .photo .photo-container, .container-lg .main .container2 .content .info .photo .photo-container, .container-xl .main .container2 .content .info .photo .photo-container {
     width: 10vw;
     height: 25vh;
     margin-left: 3vw;
@@ -10460,79 +10012,58 @@ h3 {
     align-items: center;
     justify-content: center;
   }
-
-  [alt^=profile] {
+  .container-fluid .main .container2 .content .info .photo [alt^=profile], .container-sm .main .container2 .content .info .photo [alt^=profile], .container-md .main .container2 .content .info .photo [alt^=profile], .container-lg .main .container2 .content .info .photo [alt^=profile], .container-xl .main .container2 .content .info .photo [alt^=profile] {
     border-radius: 45%;
   }
-
-  /* Menu */
-  .nav-bar {
-    width: 20vw;
+  .container-fluid .main .container2 .content .info .nav-bar, .container-sm .main .container2 .content .info .nav-bar, .container-md .main .container2 .content .info .nav-bar, .container-lg .main .container2 .content .info .nav-bar, .container-xl .main .container2 .content .info .nav-bar {
+    width: 12vw;
     height: 30vh;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    left: 80vw;
   }
-
-  ul {
+  .container-fluid .main .container2 .content .info .nav-bar ul, .container-sm .main .container2 .content .info .nav-bar ul, .container-md .main .container2 .content .info .nav-bar ul, .container-lg .main .container2 .content .info .nav-bar ul, .container-xl .main .container2 .content .info .nav-bar ul {
     width: 15vw;
     height: 25vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   }
-
-  li {
-    list-style: none;
-    width: auto;
-    line-height: 3.5vh;
-  }
-
-  .nav-bar ul a:first-child {
-    color: rgba(255, 255, 255, 0.479);
-  }
-
-  .nav-bar ul a {
+  .container-fluid .main .container2 .content .info .nav-bar ul a, .container-sm .main .container2 .content .info .nav-bar ul a, .container-md .main .container2 .content .info .nav-bar ul a, .container-lg .main .container2 .content .info .nav-bar ul a, .container-xl .main .container2 .content .info .nav-bar ul a {
     text-decoration: none;
     line-height: 3.5vh;
     color: rgba(255, 255, 255, 0.884);
   }
-
-  .text {
-    width: 70vw;
-    height: 300vh;
+  .container-fluid .main .container2 .content .info .nav-bar ul a li, .container-sm .main .container2 .content .info .nav-bar ul a li, .container-md .main .container2 .content .info .nav-bar ul a li, .container-lg .main .container2 .content .info .nav-bar ul a li, .container-xl .main .container2 .content .info .nav-bar ul a li {
+    list-style: none;
+    width: auto;
+    line-height: 3.5vh;
   }
-
-  .name-title {
-    width: 45vw;
-    height: 15vh;
+  .container-fluid .main .container2 .content .info .nav-bar ul a:first-child, .container-sm .main .container2 .content .info .nav-bar ul a:first-child, .container-md .main .container2 .content .info .nav-bar ul a:first-child, .container-lg .main .container2 .content .info .nav-bar ul a:first-child, .container-xl .main .container2 .content .info .nav-bar ul a:first-child {
+    color: rgba(255, 255, 255, 0.479);
   }
-
-  h1 {
+  .container-fluid .main .container2 .content .text, .container-sm .main .container2 .content .text, .container-md .main .container2 .content .text, .container-lg .main .container2 .content .text, .container-xl .main .container2 .content .text {
+    width: 75vw;
+    height: fit-content;
+    /* Content Elements  */
+    /* Go up */
+  }
+  .container-fluid .main .container2 .content .text .name-title, .container-sm .main .container2 .content .text .name-title, .container-md .main .container2 .content .text .name-title, .container-lg .main .container2 .content .text .name-title, .container-xl .main .container2 .content .text .name-title {
     width: 45vw;
+    height: 20vh;
+  }
+  .container-fluid .main .container2 .content .text .name-title h1, .container-sm .main .container2 .content .text .name-title h1, .container-md .main .container2 .content .text .name-title h1, .container-lg .main .container2 .content .text .name-title h1, .container-xl .main .container2 .content .text .name-title h1 {
+    width: 43vw;
     height: 7vh;
-    font-size: 3.5rem;
+    font-size: 3.2vw;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.815);
     /* font-family: 'Neucha', cursive; */
     font-family: "Source Code Pro", monospace;
     text-align: center;
-  }
-
-  h2 {
-    width: 45vw;
-    height: 7vh;
-    font-family: "Source Code Pro", monospace;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .name-title h1 {
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
     border-right: 0.15em solid orange;
@@ -10544,9 +10075,9 @@ h3 {
     letter-spacing: 0.15em;
     /* Adjust as needed */
     animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+    /* The typing effect */
+    /* The typewriter cursor effect */
   }
-
-  /* The typing effect */
   @keyframes typing {
     from {
       width: 0;
@@ -10555,7 +10086,6 @@ h3 {
       width: 100%;
     }
   }
-  /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to {
       border-color: transparent;
@@ -10564,29 +10094,48 @@ h3 {
       border-color: orange;
     }
   }
-  /* Content Elements  */
-  .elements {
+  .container-fluid .main .container2 .content .text .name-title h2, .container-sm .main .container2 .content .text .name-title h2, .container-md .main .container2 .content .text .name-title h2, .container-lg .main .container2 .content .text .name-title h2, .container-xl .main .container2 .content .text .name-title h2 {
+    width: 45vw;
+    height: 7vh;
+    font-size: 1.7vw;
+    font-family: "Source Code Pro", monospace;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-fluid .main .container2 .content .text .elements, .container-sm .main .container2 .content .text .elements, .container-md .main .container2 .content .text .elements, .container-lg .main .container2 .content .text .elements, .container-xl .main .container2 .content .text .elements {
     width: 75vw;
-    height: 260vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
+    /* SKills */
+    /* Experience */
+    /* SUBMIT */
   }
-
-  .about-container {
+  .container-fluid .main .container2 .content .text .elements .about-container, .container-sm .main .container2 .content .text .elements .about-container, .container-md .main .container2 .content .text .elements .about-container, .container-lg .main .container2 .content .text .elements .about-container, .container-xl .main .container2 .content .text .elements .about-container {
     width: 80vw;
-    height: 50vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
   }
-
-  .skills-container,
-.experience-container,
-.contact-container {
+  .container-fluid .main .container2 .content .text .elements .skills-container, .container-sm .main .container2 .content .text .elements .skills-container, .container-md .main .container2 .content .text .elements .skills-container, .container-lg .main .container2 .content .text .elements .skills-container, .container-xl .main .container2 .content .text .elements .skills-container,
+.container-fluid .main .container2 .content .text .elements .experience-container,
+.container-sm .main .container2 .content .text .elements .experience-container,
+.container-md .main .container2 .content .text .elements .experience-container,
+.container-lg .main .container2 .content .text .elements .experience-container,
+.container-xl .main .container2 .content .text .elements .experience-container,
+.container-fluid .main .container2 .content .text .elements .contact-container,
+.container-sm .main .container2 .content .text .elements .contact-container,
+.container-md .main .container2 .content .text .elements .contact-container,
+.container-lg .main .container2 .content .text .elements .contact-container,
+.container-xl .main .container2 .content .text .elements .contact-container {
     width: 80vw;
     height: 100vh;
     display: flex;
@@ -10595,129 +10144,123 @@ h3 {
     align-items: center;
     align-content: center;
   }
-
-  .special {
+  .container-fluid .main .container2 .content .text .elements .special, .container-sm .main .container2 .content .text .elements .special, .container-md .main .container2 .content .text .elements .special, .container-lg .main .container2 .content .text .elements .special, .container-xl .main .container2 .content .text .elements .special {
     font-size: 3.5rem;
     color: rgba(255, 255, 255, 0.479);
   }
-
-  .about,
-.skills,
-.experience,
-.contact {
+  .container-fluid .main .container2 .content .text .elements .about, .container-sm .main .container2 .content .text .elements .about, .container-md .main .container2 .content .text .elements .about, .container-lg .main .container2 .content .text .elements .about, .container-xl .main .container2 .content .text .elements .about,
+.container-fluid .main .container2 .content .text .elements .skills,
+.container-sm .main .container2 .content .text .elements .skills,
+.container-md .main .container2 .content .text .elements .skills,
+.container-lg .main .container2 .content .text .elements .skills,
+.container-xl .main .container2 .content .text .elements .skills,
+.container-fluid .main .container2 .content .text .elements .experience,
+.container-sm .main .container2 .content .text .elements .experience,
+.container-md .main .container2 .content .text .elements .experience,
+.container-lg .main .container2 .content .text .elements .experience,
+.container-xl .main .container2 .content .text .elements .experience,
+.container-fluid .main .container2 .content .text .elements .contact,
+.container-sm .main .container2 .content .text .elements .contact,
+.container-md .main .container2 .content .text .elements .contact,
+.container-lg .main .container2 .content .text .elements .contact,
+.container-xl .main .container2 .content .text .elements .contact {
     width: 35vw;
     height: 25vh;
     /* margin-top: 5vh; */
     /* align-self: center; */
     text-align: center;
   }
-
-  /* SKills */
-  .content0 {
+  .container-fluid .main .container2 .content .text .elements .content0, .container-sm .main .container2 .content .text .elements .content0, .container-md .main .container2 .content .text .elements .content0, .container-lg .main .container2 .content .text .elements .content0, .container-xl .main .container2 .content .text .elements .content0 {
     width: 35vw;
     height: 25vh;
     display: flex;
     flex-direction: row;
   }
-
-  .content1 {
+  .container-fluid .main .container2 .content .text .elements .content1, .container-sm .main .container2 .content .text .elements .content1, .container-md .main .container2 .content .text .elements .content1, .container-lg .main .container2 .content .text .elements .content1, .container-xl .main .container2 .content .text .elements .content1 {
     width: 25vw;
     height: 25vh;
     /* padding-top: 1.2vh; */
   }
-
-  .content2 ul {
+  .container-fluid .main .container2 .content .text .elements .content2 ul, .container-sm .main .container2 .content .text .elements .content2 ul, .container-md .main .container2 .content .text .elements .content2 ul, .container-lg .main .container2 .content .text .elements .content2 ul, .container-xl .main .container2 .content .text .elements .content2 ul {
     width: 7vw;
     height: 15vh;
     font-size: 1rem;
     font-weight: 600;
   }
-
-  /* Experience */
-  .experience {
+  .container-fluid .main .container2 .content .text .elements .experience, .container-sm .main .container2 .content .text .elements .experience, .container-md .main .container2 .content .text .elements .experience, .container-lg .main .container2 .content .text .elements .experience, .container-xl .main .container2 .content .text .elements .experience {
     width: 50vw;
     height: auto;
     text-align: center;
   }
-
-  .gallery {
+  .container-fluid .main .container2 .content .text .elements .gallery, .container-sm .main .container2 .content .text .elements .gallery, .container-md .main .container2 .content .text .elements .gallery, .container-lg .main .container2 .content .text .elements .gallery, .container-xl .main .container2 .content .text .elements .gallery {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-
-  .card-img1 {
+  .container-fluid .main .container2 .content .text .elements .card-img1, .container-sm .main .container2 .content .text .elements .card-img1, .container-md .main .container2 .content .text .elements .card-img1, .container-lg .main .container2 .content .text .elements .card-img1, .container-xl .main .container2 .content .text .elements .card-img1 {
     width: 15vw;
     height: 15vh;
     background-image: url(../img/udemy.png);
     background-position: center;
     background-size: cover;
   }
-
-  .card-img2 {
+  .container-fluid .main .container2 .content .text .elements .card-img2, .container-sm .main .container2 .content .text .elements .card-img2, .container-md .main .container2 .content .text .elements .card-img2, .container-lg .main .container2 .content .text .elements .card-img2, .container-xl .main .container2 .content .text .elements .card-img2 {
     width: 15vw;
     height: 15vh;
     background-image: url(../img/periodicTable.png);
     background-position: center;
     background-size: cover;
   }
-
-  .card-img3 {
+  .container-fluid .main .container2 .content .text .elements .card-img3, .container-sm .main .container2 .content .text .elements .card-img3, .container-md .main .container2 .content .text .elements .card-img3, .container-lg .main .container2 .content .text .elements .card-img3, .container-xl .main .container2 .content .text .elements .card-img3 {
     width: 15vw;
     height: 15vh;
     background-image: url(../img/youtube.png);
     background-position: center;
     background-size: cover;
   }
-
-  .card-img4 {
+  .container-fluid .main .container2 .content .text .elements .card-img4, .container-sm .main .container2 .content .text .elements .card-img4, .container-md .main .container2 .content .text .elements .card-img4, .container-lg .main .container2 .content .text .elements .card-img4, .container-xl .main .container2 .content .text .elements .card-img4 {
     width: 15vw;
     height: 15vh;
     background-image: url(../img/responsive.png);
     background-position: center;
     background-size: cover;
   }
-
-  .card-img5 {
+  .container-fluid .main .container2 .content .text .elements .card-img5, .container-sm .main .container2 .content .text .elements .card-img5, .container-md .main .container2 .content .text .elements .card-img5, .container-lg .main .container2 .content .text .elements .card-img5, .container-xl .main .container2 .content .text .elements .card-img5 {
     width: 15vw;
     height: 15vh;
     background-image: url(../img/chess.png);
     background-position: center;
     background-size: cover;
   }
-
-  .card {
+  .container-fluid .main .container2 .content .text .elements .card, .container-sm .main .container2 .content .text .elements .card, .container-md .main .container2 .content .text .elements .card, .container-lg .main .container2 .content .text .elements .card, .container-xl .main .container2 .content .text .elements .card {
     filter: opacity(0.5);
   }
-
-  .card:hover {
+  .container-fluid .main .container2 .content .text .elements .card:hover, .container-sm .main .container2 .content .text .elements .card:hover, .container-md .main .container2 .content .text .elements .card:hover, .container-lg .main .container2 .content .text .elements .card:hover, .container-xl .main .container2 .content .text .elements .card:hover {
     filter: none;
     transition: 0.3s ease-in;
   }
-
-  .card-title {
+  .container-fluid .main .container2 .content .text .elements .card-title, .container-sm .main .container2 .content .text .elements .card-title, .container-md .main .container2 .content .text .elements .card-title, .container-lg .main .container2 .content .text .elements .card-title, .container-xl .main .container2 .content .text .elements .card-title {
     margin-top: 1vh;
     font-size: 1.2rem;
   }
-
-  /* SUBMIT */
-  .btn-primary:hover {
+  .container-fluid .main .container2 .content .text .elements .btn-primary:hover, .container-sm .main .container2 .content .text .elements .btn-primary:hover, .container-md .main .container2 .content .text .elements .btn-primary:hover, .container-lg .main .container2 .content .text .elements .btn-primary:hover, .container-xl .main .container2 .content .text .elements .btn-primary:hover {
     color: #fff;
     background-color: #ef962d;
     border-color: #ef962d;
   }
-
-  .btn-primary:focus,
-.btn-primary.focus {
+  .container-fluid .main .container2 .content .text .elements .btn-primary:focus, .container-sm .main .container2 .content .text .elements .btn-primary:focus, .container-md .main .container2 .content .text .elements .btn-primary:focus, .container-lg .main .container2 .content .text .elements .btn-primary:focus, .container-xl .main .container2 .content .text .elements .btn-primary:focus,
+.container-fluid .main .container2 .content .text .elements .btn-primary.focus,
+.container-sm .main .container2 .content .text .elements .btn-primary.focus,
+.container-md .main .container2 .content .text .elements .btn-primary.focus,
+.container-lg .main .container2 .content .text .elements .btn-primary.focus,
+.container-xl .main .container2 .content .text .elements .btn-primary.focus {
     color: #fff;
     background-color: #ef962d;
     border-color: #ef962d;
     box-shadow: 0 0 0 0.2rem #ef962d;
   }
-
-  /* Go up */
-  #button {
+  .container-fluid .main .container2 .content #button, .container-sm .main .container2 .content #button, .container-md .main .container2 .content #button, .container-lg .main .container2 .content #button, .container-xl .main .container2 .content #button {
     display: inline-block;
     background-color: #ff9800;
     width: 50px;
@@ -10730,8 +10273,7 @@ h3 {
     right: 30px;
     z-index: 1000;
   }
-
-  #button::after {
+  .container-fluid .main .container2 .content #button::after, .container-sm .main .container2 .content #button::after, .container-md .main .container2 .content #button::after, .container-lg .main .container2 .content #button::after, .container-xl .main .container2 .content #button::after {
     content: "";
     font-family: FontAwesome;
     font-weight: normal;
@@ -10740,14 +10282,16 @@ h3 {
     line-height: 50px;
     color: #fff;
   }
-
-  #button:hover {
+  .container-fluid .main .container2 .content #button:hover, .container-sm .main .container2 .content #button:hover, .container-md .main .container2 .content #button:hover, .container-lg .main .container2 .content #button:hover, .container-xl .main .container2 .content #button:hover {
     cursor: pointer;
     background-color: #333;
   }
-
-  .media-mobile,
-.media-container-mobile {
+  .container-fluid .main .container2 .content .media-mobile, .container-sm .main .container2 .content .media-mobile, .container-md .main .container2 .content .media-mobile, .container-lg .main .container2 .content .media-mobile, .container-xl .main .container2 .content .media-mobile,
+.container-fluid .main .container2 .content .media-container-mobile,
+.container-sm .main .container2 .content .media-container-mobile,
+.container-md .main .container2 .content .media-container-mobile,
+.container-lg .main .container2 .content .media-container-mobile,
+.container-xl .main .container2 .content .media-container-mobile {
     display: none;
   }
 }
