@@ -10112,7 +10112,6 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    /* SKills */
     /* Experience */
     /* SUBMIT */
   }
@@ -10164,97 +10163,194 @@ h3 {
 .container-md .main .container2 .content .text .elements .contact,
 .container-lg .main .container2 .content .text .elements .contact,
 .container-xl .main .container2 .content .text .elements .contact {
-    width: 35vw;
-    height: 25vh;
+    width: 40vw;
+    height: 45vh;
     /* margin-top: 5vh; */
     /* align-self: center; */
     text-align: center;
+    /* SKills */
   }
-  .container-fluid .main .container2 .content .text .elements .content0, .container-sm .main .container2 .content .text .elements .content0, .container-md .main .container2 .content .text .elements .content0, .container-lg .main .container2 .content .text .elements .content0, .container-xl .main .container2 .content .text .elements .content0 {
-    width: 35vw;
-    height: 25vh;
+  .container-fluid .main .container2 .content .text .elements .about .content0, .container-sm .main .container2 .content .text .elements .about .content0, .container-md .main .container2 .content .text .elements .about .content0, .container-lg .main .container2 .content .text .elements .about .content0, .container-xl .main .container2 .content .text .elements .about .content0,
+.container-fluid .main .container2 .content .text .elements .skills .content0,
+.container-sm .main .container2 .content .text .elements .skills .content0,
+.container-md .main .container2 .content .text .elements .skills .content0,
+.container-lg .main .container2 .content .text .elements .skills .content0,
+.container-xl .main .container2 .content .text .elements .skills .content0,
+.container-fluid .main .container2 .content .text .elements .experience .content0,
+.container-sm .main .container2 .content .text .elements .experience .content0,
+.container-md .main .container2 .content .text .elements .experience .content0,
+.container-lg .main .container2 .content .text .elements .experience .content0,
+.container-xl .main .container2 .content .text .elements .experience .content0,
+.container-fluid .main .container2 .content .text .elements .contact .content0,
+.container-sm .main .container2 .content .text .elements .contact .content0,
+.container-md .main .container2 .content .text .elements .contact .content0,
+.container-lg .main .container2 .content .text .elements .contact .content0,
+.container-xl .main .container2 .content .text .elements .contact .content0 {
+    width: 40vw;
+    height: 30vh;
     display: flex;
-    flex-direction: row;
   }
-  .container-fluid .main .container2 .content .text .elements .content1, .container-sm .main .container2 .content .text .elements .content1, .container-md .main .container2 .content .text .elements .content1, .container-lg .main .container2 .content .text .elements .content1, .container-xl .main .container2 .content .text .elements .content1 {
-    width: 25vw;
-    height: 25vh;
-    /* padding-top: 1.2vh; */
+  .container-fluid .main .container2 .content .text .elements .about .content0 .content1, .container-sm .main .container2 .content .text .elements .about .content0 .content1, .container-md .main .container2 .content .text .elements .about .content0 .content1, .container-lg .main .container2 .content .text .elements .about .content0 .content1, .container-xl .main .container2 .content .text .elements .about .content0 .content1,
+.container-fluid .main .container2 .content .text .elements .skills .content0 .content1,
+.container-sm .main .container2 .content .text .elements .skills .content0 .content1,
+.container-md .main .container2 .content .text .elements .skills .content0 .content1,
+.container-lg .main .container2 .content .text .elements .skills .content0 .content1,
+.container-xl .main .container2 .content .text .elements .skills .content0 .content1,
+.container-fluid .main .container2 .content .text .elements .experience .content0 .content1,
+.container-sm .main .container2 .content .text .elements .experience .content0 .content1,
+.container-md .main .container2 .content .text .elements .experience .content0 .content1,
+.container-lg .main .container2 .content .text .elements .experience .content0 .content1,
+.container-xl .main .container2 .content .text .elements .experience .content0 .content1,
+.container-fluid .main .container2 .content .text .elements .contact .content0 .content1,
+.container-sm .main .container2 .content .text .elements .contact .content0 .content1,
+.container-md .main .container2 .content .text .elements .contact .content0 .content1,
+.container-lg .main .container2 .content .text .elements .contact .content0 .content1,
+.container-xl .main .container2 .content .text .elements .contact .content0 .content1 {
+    width: 30vw;
+    height: 30vh;
+    display: flex;
   }
-  .container-fluid .main .container2 .content .text .elements .content2 ul, .container-sm .main .container2 .content .text .elements .content2 ul, .container-md .main .container2 .content .text .elements .content2 ul, .container-lg .main .container2 .content .text .elements .content2 ul, .container-xl .main .container2 .content .text .elements .content2 ul {
-    width: 7vw;
-    height: 15vh;
+  .container-fluid .main .container2 .content .text .elements .about .content0 .content1 p, .container-sm .main .container2 .content .text .elements .about .content0 .content1 p, .container-md .main .container2 .content .text .elements .about .content0 .content1 p, .container-lg .main .container2 .content .text .elements .about .content0 .content1 p, .container-xl .main .container2 .content .text .elements .about .content0 .content1 p,
+.container-fluid .main .container2 .content .text .elements .skills .content0 .content1 p,
+.container-sm .main .container2 .content .text .elements .skills .content0 .content1 p,
+.container-md .main .container2 .content .text .elements .skills .content0 .content1 p,
+.container-lg .main .container2 .content .text .elements .skills .content0 .content1 p,
+.container-xl .main .container2 .content .text .elements .skills .content0 .content1 p,
+.container-fluid .main .container2 .content .text .elements .experience .content0 .content1 p,
+.container-sm .main .container2 .content .text .elements .experience .content0 .content1 p,
+.container-md .main .container2 .content .text .elements .experience .content0 .content1 p,
+.container-lg .main .container2 .content .text .elements .experience .content0 .content1 p,
+.container-xl .main .container2 .content .text .elements .experience .content0 .content1 p,
+.container-fluid .main .container2 .content .text .elements .contact .content0 .content1 p,
+.container-sm .main .container2 .content .text .elements .contact .content0 .content1 p,
+.container-md .main .container2 .content .text .elements .contact .content0 .content1 p,
+.container-lg .main .container2 .content .text .elements .contact .content0 .content1 p,
+.container-xl .main .container2 .content .text .elements .contact .content0 .content1 p {
+    align-self: center;
+  }
+  .container-fluid .main .container2 .content .text .elements .about .content0 .content2, .container-sm .main .container2 .content .text .elements .about .content0 .content2, .container-md .main .container2 .content .text .elements .about .content0 .content2, .container-lg .main .container2 .content .text .elements .about .content0 .content2, .container-xl .main .container2 .content .text .elements .about .content0 .content2,
+.container-fluid .main .container2 .content .text .elements .skills .content0 .content2,
+.container-sm .main .container2 .content .text .elements .skills .content0 .content2,
+.container-md .main .container2 .content .text .elements .skills .content0 .content2,
+.container-lg .main .container2 .content .text .elements .skills .content0 .content2,
+.container-xl .main .container2 .content .text .elements .skills .content0 .content2,
+.container-fluid .main .container2 .content .text .elements .experience .content0 .content2,
+.container-sm .main .container2 .content .text .elements .experience .content0 .content2,
+.container-md .main .container2 .content .text .elements .experience .content0 .content2,
+.container-lg .main .container2 .content .text .elements .experience .content0 .content2,
+.container-xl .main .container2 .content .text .elements .experience .content0 .content2,
+.container-fluid .main .container2 .content .text .elements .contact .content0 .content2,
+.container-sm .main .container2 .content .text .elements .contact .content0 .content2,
+.container-md .main .container2 .content .text .elements .contact .content0 .content2,
+.container-lg .main .container2 .content .text .elements .contact .content0 .content2,
+.container-xl .main .container2 .content .text .elements .contact .content0 .content2 {
+    width: 10vw;
+    height: 30vh;
     font-size: 1rem;
     font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container-fluid .main .container2 .content .text .elements .about .content0 .content2 ul, .container-sm .main .container2 .content .text .elements .about .content0 .content2 ul, .container-md .main .container2 .content .text .elements .about .content0 .content2 ul, .container-lg .main .container2 .content .text .elements .about .content0 .content2 ul, .container-xl .main .container2 .content .text .elements .about .content0 .content2 ul,
+.container-fluid .main .container2 .content .text .elements .skills .content0 .content2 ul,
+.container-sm .main .container2 .content .text .elements .skills .content0 .content2 ul,
+.container-md .main .container2 .content .text .elements .skills .content0 .content2 ul,
+.container-lg .main .container2 .content .text .elements .skills .content0 .content2 ul,
+.container-xl .main .container2 .content .text .elements .skills .content0 .content2 ul,
+.container-fluid .main .container2 .content .text .elements .experience .content0 .content2 ul,
+.container-sm .main .container2 .content .text .elements .experience .content0 .content2 ul,
+.container-md .main .container2 .content .text .elements .experience .content0 .content2 ul,
+.container-lg .main .container2 .content .text .elements .experience .content0 .content2 ul,
+.container-xl .main .container2 .content .text .elements .experience .content0 .content2 ul,
+.container-fluid .main .container2 .content .text .elements .contact .content0 .content2 ul,
+.container-sm .main .container2 .content .text .elements .contact .content0 .content2 ul,
+.container-md .main .container2 .content .text .elements .contact .content0 .content2 ul,
+.container-lg .main .container2 .content .text .elements .contact .content0 .content2 ul,
+.container-xl .main .container2 .content .text .elements .contact .content0 .content2 ul {
+    list-style: none;
   }
   .container-fluid .main .container2 .content .text .elements .experience, .container-sm .main .container2 .content .text .elements .experience, .container-md .main .container2 .content .text .elements .experience, .container-lg .main .container2 .content .text .elements .experience, .container-xl .main .container2 .content .text .elements .experience {
     width: 50vw;
     height: auto;
     text-align: center;
   }
-  .container-fluid .main .container2 .content .text .elements .gallery, .container-sm .main .container2 .content .text .elements .gallery, .container-md .main .container2 .content .text .elements .gallery, .container-lg .main .container2 .content .text .elements .gallery, .container-xl .main .container2 .content .text .elements .gallery {
+  .container-fluid .main .container2 .content .text .elements .experience .gallery, .container-sm .main .container2 .content .text .elements .experience .gallery, .container-md .main .container2 .content .text .elements .experience .gallery, .container-lg .main .container2 .content .text .elements .experience .gallery, .container-xl .main .container2 .content .text .elements .experience .gallery {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-  .container-fluid .main .container2 .content .text .elements .card-img1, .container-sm .main .container2 .content .text .elements .card-img1, .container-md .main .container2 .content .text .elements .card-img1, .container-lg .main .container2 .content .text .elements .card-img1, .container-xl .main .container2 .content .text .elements .card-img1 {
+  .container-fluid .main .container2 .content .text .elements .experience .card-img1, .container-sm .main .container2 .content .text .elements .experience .card-img1, .container-md .main .container2 .content .text .elements .experience .card-img1, .container-lg .main .container2 .content .text .elements .experience .card-img1, .container-xl .main .container2 .content .text .elements .experience .card-img1 {
     width: 15vw;
     height: 15vh;
-    background-image: url(../img/udemy.png);
+    background-image: url(../img/pizza_shop.png);
     background-position: center;
     background-size: cover;
   }
-  .container-fluid .main .container2 .content .text .elements .card-img2, .container-sm .main .container2 .content .text .elements .card-img2, .container-md .main .container2 .content .text .elements .card-img2, .container-lg .main .container2 .content .text .elements .card-img2, .container-xl .main .container2 .content .text .elements .card-img2 {
+  .container-fluid .main .container2 .content .text .elements .experience .card-img2, .container-sm .main .container2 .content .text .elements .experience .card-img2, .container-md .main .container2 .content .text .elements .experience .card-img2, .container-lg .main .container2 .content .text .elements .experience .card-img2, .container-xl .main .container2 .content .text .elements .experience .card-img2 {
     width: 15vw;
     height: 15vh;
-    background-image: url(../img/periodicTable.png);
+    background-image: url(../img/morse_code.png);
     background-position: center;
     background-size: cover;
   }
-  .container-fluid .main .container2 .content .text .elements .card-img3, .container-sm .main .container2 .content .text .elements .card-img3, .container-md .main .container2 .content .text .elements .card-img3, .container-lg .main .container2 .content .text .elements .card-img3, .container-xl .main .container2 .content .text .elements .card-img3 {
+  .container-fluid .main .container2 .content .text .elements .experience .card-img3, .container-sm .main .container2 .content .text .elements .experience .card-img3, .container-md .main .container2 .content .text .elements .experience .card-img3, .container-lg .main .container2 .content .text .elements .experience .card-img3, .container-xl .main .container2 .content .text .elements .experience .card-img3 {
     width: 15vw;
     height: 15vh;
-    background-image: url(../img/youtube.png);
+    background-image: url(../img/youtube-copy.png);
     background-position: center;
     background-size: cover;
   }
-  .container-fluid .main .container2 .content .text .elements .card-img4, .container-sm .main .container2 .content .text .elements .card-img4, .container-md .main .container2 .content .text .elements .card-img4, .container-lg .main .container2 .content .text .elements .card-img4, .container-xl .main .container2 .content .text .elements .card-img4 {
+  .container-fluid .main .container2 .content .text .elements .experience .card-img4, .container-sm .main .container2 .content .text .elements .experience .card-img4, .container-md .main .container2 .content .text .elements .experience .card-img4, .container-lg .main .container2 .content .text .elements .experience .card-img4, .container-xl .main .container2 .content .text .elements .experience .card-img4 {
     width: 15vw;
     height: 15vh;
-    background-image: url(../img/responsive.png);
+    background-image: url(../img/instagram.png);
     background-position: center;
     background-size: cover;
   }
-  .container-fluid .main .container2 .content .text .elements .card-img5, .container-sm .main .container2 .content .text .elements .card-img5, .container-md .main .container2 .content .text .elements .card-img5, .container-lg .main .container2 .content .text .elements .card-img5, .container-xl .main .container2 .content .text .elements .card-img5 {
+  .container-fluid .main .container2 .content .text .elements .experience .card-img5, .container-sm .main .container2 .content .text .elements .experience .card-img5, .container-md .main .container2 .content .text .elements .experience .card-img5, .container-lg .main .container2 .content .text .elements .experience .card-img5, .container-xl .main .container2 .content .text .elements .experience .card-img5 {
     width: 15vw;
     height: 15vh;
-    background-image: url(../img/chess.png);
+    background-image: url(../img/dtravel.png);
     background-position: center;
     background-size: cover;
   }
-  .container-fluid .main .container2 .content .text .elements .card, .container-sm .main .container2 .content .text .elements .card, .container-md .main .container2 .content .text .elements .card, .container-lg .main .container2 .content .text .elements .card, .container-xl .main .container2 .content .text .elements .card {
+  .container-fluid .main .container2 .content .text .elements .experience .card-img6, .container-sm .main .container2 .content .text .elements .experience .card-img6, .container-md .main .container2 .content .text .elements .experience .card-img6, .container-lg .main .container2 .content .text .elements .experience .card-img6, .container-xl .main .container2 .content .text .elements .experience .card-img6 {
+    width: 15vw;
+    height: 15vh;
+    background-image: url(../img/to_do_list.png);
+    background-position: center;
+    background-size: cover;
+  }
+  .container-fluid .main .container2 .content .text .elements .experience .card, .container-sm .main .container2 .content .text .elements .experience .card, .container-md .main .container2 .content .text .elements .experience .card, .container-lg .main .container2 .content .text .elements .experience .card, .container-xl .main .container2 .content .text .elements .experience .card {
     filter: opacity(0.5);
   }
-  .container-fluid .main .container2 .content .text .elements .card:hover, .container-sm .main .container2 .content .text .elements .card:hover, .container-md .main .container2 .content .text .elements .card:hover, .container-lg .main .container2 .content .text .elements .card:hover, .container-xl .main .container2 .content .text .elements .card:hover {
+  .container-fluid .main .container2 .content .text .elements .experience .card:hover, .container-sm .main .container2 .content .text .elements .experience .card:hover, .container-md .main .container2 .content .text .elements .experience .card:hover, .container-lg .main .container2 .content .text .elements .experience .card:hover, .container-xl .main .container2 .content .text .elements .experience .card:hover {
     filter: none;
     transition: 0.3s ease-in;
   }
-  .container-fluid .main .container2 .content .text .elements .card-title, .container-sm .main .container2 .content .text .elements .card-title, .container-md .main .container2 .content .text .elements .card-title, .container-lg .main .container2 .content .text .elements .card-title, .container-xl .main .container2 .content .text .elements .card-title {
+  .container-fluid .main .container2 .content .text .elements .experience .card-title, .container-sm .main .container2 .content .text .elements .experience .card-title, .container-md .main .container2 .content .text .elements .experience .card-title, .container-lg .main .container2 .content .text .elements .experience .card-title, .container-xl .main .container2 .content .text .elements .experience .card-title {
     margin-top: 1vh;
     font-size: 1.2rem;
+    background-color: #0c494d;
   }
-  .container-fluid .main .container2 .content .text .elements .btn-primary:hover, .container-sm .main .container2 .content .text .elements .btn-primary:hover, .container-md .main .container2 .content .text .elements .btn-primary:hover, .container-lg .main .container2 .content .text .elements .btn-primary:hover, .container-xl .main .container2 .content .text .elements .btn-primary:hover {
+  .container-fluid .main .container2 .content .text .elements .btn-primary, .container-sm .main .container2 .content .text .elements .btn-primary, .container-md .main .container2 .content .text .elements .btn-primary, .container-lg .main .container2 .content .text .elements .btn-primary, .container-xl .main .container2 .content .text .elements .btn-primary {
     color: #fff;
     background-color: #ef962d;
     border-color: #ef962d;
   }
-  .container-fluid .main .container2 .content .text .elements .btn-primary:focus, .container-sm .main .container2 .content .text .elements .btn-primary:focus, .container-md .main .container2 .content .text .elements .btn-primary:focus, .container-lg .main .container2 .content .text .elements .btn-primary:focus, .container-xl .main .container2 .content .text .elements .btn-primary:focus,
-.container-fluid .main .container2 .content .text .elements .btn-primary.focus,
-.container-sm .main .container2 .content .text .elements .btn-primary.focus,
-.container-md .main .container2 .content .text .elements .btn-primary.focus,
-.container-lg .main .container2 .content .text .elements .btn-primary.focus,
-.container-xl .main .container2 .content .text .elements .btn-primary.focus {
+  .container-fluid .main .container2 .content .text .elements .btn-primary .btn-primary:hover, .container-sm .main .container2 .content .text .elements .btn-primary .btn-primary:hover, .container-md .main .container2 .content .text .elements .btn-primary .btn-primary:hover, .container-lg .main .container2 .content .text .elements .btn-primary .btn-primary:hover, .container-xl .main .container2 .content .text .elements .btn-primary .btn-primary:hover {
+    color: #fff;
+    background-color: #ef962d;
+    border-color: #ef962d;
+  }
+  .container-fluid .main .container2 .content .text .elements .btn-primary .btn-primary:focus, .container-sm .main .container2 .content .text .elements .btn-primary .btn-primary:focus, .container-md .main .container2 .content .text .elements .btn-primary .btn-primary:focus, .container-lg .main .container2 .content .text .elements .btn-primary .btn-primary:focus, .container-xl .main .container2 .content .text .elements .btn-primary .btn-primary:focus,
+.container-fluid .main .container2 .content .text .elements .btn-primary .btn-primary.focus,
+.container-sm .main .container2 .content .text .elements .btn-primary .btn-primary.focus,
+.container-md .main .container2 .content .text .elements .btn-primary .btn-primary.focus,
+.container-lg .main .container2 .content .text .elements .btn-primary .btn-primary.focus,
+.container-xl .main .container2 .content .text .elements .btn-primary .btn-primary.focus {
     color: #fff;
     background-color: #ef962d;
     border-color: #ef962d;
