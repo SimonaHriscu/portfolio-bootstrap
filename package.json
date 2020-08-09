@@ -2,7 +2,6 @@
   "name": "bootstrap-portfolio",
   "version": "1.0.0",
   "description": "bootstrap-portfolio",
-  "homepage": "portfolio-bootstrap",
   "main": "index.js",
   "scripts": {
     "start": "run-p watch watch:styles",
@@ -15,10 +14,6 @@
     "clean:styles": "rm -rf src/styles",
     "copy": "mkdir dist && rsync -avr --exclude=\"/scss\" src/ dist",
     "publish": "gh-pages -d dist"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SimonaHriscu/portfolio-bootstrap"
   },
   "author": "Simona",
   "license": "ISC",
