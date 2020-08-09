@@ -295,62 +295,75 @@
                 width: 50vw;
                 height: auto;
                 text-align: center;
-              
-              .gallery {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
+
+                .gallery {
+                  display: flex;
+                  flex-direction: row;
+                  flex-wrap: wrap;
+                  justify-content: space-evenly;
+                }
+                .card-img1 {
+                  width: 15vw;
+                  height: 15vh;
+                  background-image: url(../img/pizza_shop.png);
+                  background-position: center;
+                  background-size: cover;
+                }
+                .card-img2 {
+                  width: 15vw;
+                  height: 15vh;
+                  background-image: url(../img/morse_code.png);
+                  background-position: center;
+                  background-size: cover;
+                }
+                .card-img3 {
+                  width: 15vw;
+                  height: 15vh;
+                  background-image: url(../img/youtube-copy.png);
+                  background-position: center;
+                  background-size: cover;
+                }
+                .card-img4 {
+                  width: 15vw;
+                  height: 15vh;
+                  background-image: url(../img/instagram.png);
+                  background-position: center;
+                  background-size: cover;
+                }
+                .card-img5 {
+                  width: 15vw;
+                  height: 15vh;
+                  background-image: url(../img/dtravel.png);
+                  background-position: center;
+                  background-size: cover;
+                }
+                .card-img6 {
+                  width: 15vw;
+                  height: 15vh;
+                  background-image: url(../img/to_do_list.png);
+                  background-position: center;
+                  background-size: cover;
+                }
+                .card {
+                  filter: opacity(0.5);
+                }
+                .card:hover {
+                  filter: none;
+                  transition: 0.3s ease-in;
+                }
+                .card-title {
+                  margin-top: 1vh;
+                  font-size: 1.2rem;
+                  background-color: #0c494d;
+                }
               }
-              .card-img1 {
-                width: 15vw;
-                height: 15vh;
-                background-image: url(../img/udemy.png);
-                background-position: center;
-                background-size: cover;
-              }
-              .card-img2 {
-                width: 15vw;
-                height: 15vh;
-                background-image: url(../img/periodicTable.png);
-                background-position: center;
-                background-size: cover;
-              }
-              .card-img3 {
-                width: 15vw;
-                height: 15vh;
-                background-image: url(../img/youtube.png);
-                background-position: center;
-                background-size: cover;
-              }
-              .card-img4 {
-                width: 15vw;
-                height: 15vh;
-                background-image: url(../img/responsive.png);
-                background-position: center;
-                background-size: cover;
-              }
-              .card-img5 {
-                width: 15vw;
-                height: 15vh;
-                background-image: url(../img/chess.png);
-                background-position: center;
-                background-size: cover;
-              }
-              .card {
-                filter: opacity(0.5);
-              }
-              .card:hover {
-                filter: none;
-                transition: 0.3s ease-in;
-              }
-              .card-title {
-                margin-top: 1vh;
-                font-size: 1.2rem;
-              }
-            }
 
               /* SUBMIT */
+              .btn-primary{
+                color: #fff;
+                background-color: #ef962d;
+                border-color: #ef962d;
+              
               .btn-primary:hover {
                 color: #fff;
                 background-color: #ef962d;
@@ -364,7 +377,7 @@
                 border-color: #ef962d;
                 box-shadow: 0 0 0 0.2rem #ef962d;
               }
-            }
+            }}
             /* Go up */
           }
           #button {
